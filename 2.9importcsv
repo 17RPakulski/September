@@ -1,0 +1,17 @@
+import csv
+
+f = open('csvfile.csv', 'a',newline='')
+
+header = ['Firstname', 'Surname', 'Telephone']
+row1 = ['Tom', 'Smith', '10344044']
+row2 = ['Sandra', 'Jones', '22344033']
+row3 = ['John', 'Jacob', '5507788']
+
+db = csv.writer(f)
+
+db.writerow(header)
+db.writerow(row1)
+db.writerow(row2)
+db.writerow(row3)
+
+f.close()
